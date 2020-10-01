@@ -18,6 +18,7 @@ type RouteRequest struct {
 	RegexPriority *int      `json:"regex_priority" yaml:"regex_priority"`
 	StripPath     *bool     `json:"strip_path" yaml:"strip_path"`
 	PreserveHost  *bool     `json:"preserve_host" yaml:"preserve_host"`
+	HttpsRedirectStatusCode  *int     `json:"https_redirect_status_code" yaml:"https_redirect_status_code"`
 	Snis          []*string `json:"snis" yaml:"snis"`
 	Sources       []*IpPort `json:"sources" yaml:"sources"`
 	Destinations  []*IpPort `json:"destinations" yaml:"destinations"`
@@ -36,6 +37,7 @@ type Route struct {
 	RegexPriority *int      `json:"regex_priority" yaml:"regex_priority"`
 	StripPath     *bool     `json:"strip_path" yaml:"strip_path"`
 	PreserveHost  *bool     `json:"preserve_host" yaml:"preserve_host"`
+	HttpsRedirectStatusCode  *int     `json:"https_redirect_status_code" yaml:"https_redirect_status_code"`	
 	Snis          []*string `json:"snis" yaml:"snis"`
 	Sources       []*IpPort `json:"sources" yaml:"sources"`
 	Destinations  []*IpPort `json:"destinations" yaml:"destinations"`
