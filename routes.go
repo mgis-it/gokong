@@ -20,6 +20,7 @@ type RouteRequest struct {
 	PreserveHost  *bool     `json:"preserve_host" yaml:"preserve_host"`
 	HttpsRedirectStatusCode  *int     `json:"https_redirect_status_code" yaml:"https_redirect_status_code"`
 	Snis          []*string `json:"snis" yaml:"snis"`
+	Tags          []*string `json:"tags" yaml:"tags"`
 	Sources       []*IpPort `json:"sources" yaml:"sources"`
 	Destinations  []*IpPort `json:"destinations" yaml:"destinations"`
 	Service       *Id       `json:"service" yaml:"service"`
@@ -39,6 +40,7 @@ type Route struct {
 	PreserveHost  *bool     `json:"preserve_host" yaml:"preserve_host"`
 	HttpsRedirectStatusCode  *int     `json:"https_redirect_status_code" yaml:"https_redirect_status_code"`	
 	Snis          []*string `json:"snis" yaml:"snis"`
+	Tags          []*string `json:"tags" yaml:"tags"`	
 	Sources       []*IpPort `json:"sources" yaml:"sources"`
 	Destinations  []*IpPort `json:"destinations" yaml:"destinations"`
 	Service       *Id       `json:"service" yaml:"service"`
